@@ -1,0 +1,11 @@
+name: Workflow
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@f1992d8d5878213d1b94064e4f8ee760c19288c1
+      - uses: joshmgross/fantastic-enigma-three@48d5a1f0f947432693459795a5ce3cc76b78c59d
